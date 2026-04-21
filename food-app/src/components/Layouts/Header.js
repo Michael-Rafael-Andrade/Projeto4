@@ -23,7 +23,7 @@ function Header() {
             <Navbar
                 collapseOnSelect
                 expand="lg"
-            className={'${ nav === true ? "sticky" : "" }'}
+                className={nav ? "sticky" : ""}
             >
                 <Container>
                     <Navbar.Brand href="#home">
