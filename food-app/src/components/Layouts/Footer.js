@@ -29,7 +29,7 @@ function Footer() {
                 <Container>
                     <Row>
                         <Col sm={6} lg={3} className="mb-4 mb-lg-0">
-                            <div>
+                            <div className="text-center">
                                 <h5>Localização</h5>
                                 <p>Rua JK, nº 120</p>
                                 <p>Centro, CEP 30900-000</p>
@@ -37,7 +37,7 @@ function Footer() {
                             </div>
                         </Col>
                         <Col sm={6} lg={3} className="mb-4 mb-lg-0">
-                            <div>
+                            <div className="text-center">
                                 <h5>Aberto às</h5>
                                 <p>Segunda - Sexta: 09: 00AM - 10:00PM</p>
                                 <p>Sábado: 10:00AM - 08-30PM</p>
@@ -46,7 +46,7 @@ function Footer() {
                         </Col>
 
                         <Col sm={6} lg={3} className="mb-4 mb-lg-0">
-                            <div>
+                            <div className="text-center">
                                 <h5>Comprar</h5>
                                 <p>Whatsapp</p>
                                 <p>
@@ -59,7 +59,7 @@ function Footer() {
                         </Col>
 
                         <Col sm={6} lg={3} className="mb-4 mb-lg-0">
-                            <div>
+                            <div className="text-center">
                                 <h5>Siga a gente</h5>
                                 <p>Redes Sociais Oficiais</p>
                                 <ul className="list-unstyled text-center mt-2">
@@ -68,18 +68,68 @@ function Footer() {
                                             <i class="bi bi-facebook"></i>
                                         </Link>
                                     </li>
-
+                                    <li>
+                                        <Link>
+                                            <i class="bi bi-twitter"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                            <i class="bi bi-instagram"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                            <i class="bi bi-youtube"></i>
+                                        </Link>
+                                    </li>
+                                    {/* Observação: i = icons e bi = bootstratp icons */}
                                 </ul>
 
                             </div>
                         </Col>
 
                     </Row>
+                    <Row className="copy_right">
+                        <Col>
+                            <div>
+                                <ul className="list-unstyled text-center mb-0">
+                                    <li>
+                                        <Link to='/'>
+                                            2026. Todos os direitos reservados
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/'>
+                                            Sobre nós
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/'>
+                                            Termos de uso
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/'>
+                                            Política de Privacidade
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </Col>
+                    </Row>
                 </Container>
             </footer>
 
+            {/* Scroll to Top */}
+            {isVisible && (
+                <div className="scroll_top" onClick={scrollTop}>
+                    <i class="bi bi-arrow-up"></i>
+                </div>
+
+            )}
         </>
-    )
+    );
 
 }
 
