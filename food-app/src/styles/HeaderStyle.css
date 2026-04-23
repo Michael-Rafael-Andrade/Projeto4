@@ -14,7 +14,7 @@ header .navbar.sticky {
     top: 0;
     background-color: var(--white);
     /* background-color: white; */
-    transition: all 15ms ease-in-out;
+    transition: all 700ms ease-in-out;
     animation-name: stickyTransition;
     animation-fill-mode: both;
     box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
