@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 function Section1() {
 
     return (
-        <section>
+        <section className="hero_section">
             <Container>
                 <Row>
                     <Col lg={7} className="mb-5 mb-lg-0">
-                        <div>
+                        <div className="position-relative">
                             <img src={Burger} className="img-fluid" />
                             <div className="price_badge">
                                 <div className="badge_text">
@@ -24,9 +24,9 @@ function Section1() {
                     <Col lg={5}>
                         <div className="hero_text text-center">
                             <h1 className="text-white">Novo Burguer</h1>
-                            <h1 className="text-white">Double Cheddar</h1>
-                            <p className="texte-white pt-2 pb-4">
-                                Experimente o novo Doubble Burguer:
+                            <h2 className="text-white">Double Cheddar</h2>
+                            <p className="text-white pt-2 pb-4">
+                                Experimente o novo Double Burguer:
                                 2x bifes, 2x mais cebola, 2x queijos cheddar, 2x salada, maionese caseira e um pão extremamente macio.
                             </p>
                             <Link to='/' className="btn order_now">
