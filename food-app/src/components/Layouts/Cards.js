@@ -22,7 +22,7 @@ function Cards({ image, title, rating, paragraph, price, renderRatingIcons }){
                     <Card.Text className="flex-grow-1">{paragraph}</Card.Text>
                     <div className="d-flex align-items-center justify-content-between mt-3">
                         <div className="menu_price">
-                            <h5>R${Number(price).toFixed(2).replace('.',',')}</h5>
+                            <h5 className="mb-0">R${Number(price).toFixed(2).replace('.',',')}</h5>
                         </div>
                         <div className="add_to_card">
                             <Link>

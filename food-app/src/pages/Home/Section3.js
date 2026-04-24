@@ -1,3 +1,4 @@
+import "../../styles/HomeStyle.css";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image1 from "../../assets/menu/burger-11.jpg";
@@ -104,7 +105,7 @@ function renderRatingIcons(rating) {
 function Section3() {
 
     return (
-        <section>
+        <section className="menu_section">
             <Container>
                 {/*  */}
                 <Row>
