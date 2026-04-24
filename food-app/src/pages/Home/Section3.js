@@ -1,20 +1,21 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Image1 from "../../assets/menu/burguer-11.png";
-import Image1 from "../../assets/menu/burguer-12.png";
-import Image1 from "../../assets/menu/burguer-13.png";
-import Image1 from "../../assets/menu/burguer-14.png";
-import Image1 from "../../assets/menu/burguer-15.png";
-import Image1 from "../../assets/menu/burguer-16.png";
-import Image1 from "../../assets/menu/burguer-17.png";
-import Image1 from "../../assets/menu/burguer-18.png";
+import Image1 from "../../assets/menu/burger-11.jpg";
+import Image2 from "../../assets/menu/burger-12.jpg";
+import Image3 from "../../assets/menu/burger-13.jpg";
+import Image4 from "../../assets/menu/burger-14.jpg";
+import Image5 from "../../assets/menu/burger-15.jpg";
+import Image6 from "../../assets/menu/burger-16.jpg";
+import Image7 from "../../assets/menu/burger-17.jpg";
+import Image8 from "../../assets/menu/burger-18.jpg";
 
 import { Link } from "react-router-dom";
+import Cards from "../../components/Layouts/Cards";
 
 const mockData = [
     {
         id: "0001",
-        image1: Image1,
+        image: Image1,
         title: "Crispy chicken",
         paragraph: "Frango crocante, molho chili, tomates, picles e coleslaw artesanal.",
         rating: 5,
@@ -22,7 +23,7 @@ const mockData = [
     },
     {
         id: "0002",
-        image1: Image2,
+        image: Image2,
         title: "Ultimate Bacon",
         paragraph: "Blend da casa, queijo cheddar, bacon crocante, cebola e mostarda.",
         rating: 4.5,
@@ -30,7 +31,7 @@ const mockData = [
     },
     {
         id: "0003",
-        image1: Image3,
+        image: Image3,
         title: "Black Sheep",
         paragraph: "Queijo prato, relish de tomate, abacate fresh, alface e cebola roxa.",
         rating: 4.5,
@@ -38,7 +39,7 @@ const mockData = [
     },
     {
         id: "0004",
-        image1: Image4,
+        image: Image4,
         title: "Vegan Burguer",
         paragraph: "Hambúrguer de grão-de-bico, queijo vegano, alface, tomate e maionese de ervas.",
         rating: 4.0,
@@ -46,7 +47,7 @@ const mockData = [
     },
     {
         id: "0005",
-        image1: Image5,
+        image: Image5,
         title: "Double Burguer",
         paragraph: "Dois blends de 160g, dobro de cheddar, picles e molho especial.",
         rating: 5.0,
@@ -54,7 +55,7 @@ const mockData = [
     },
     {
         id: "0006",
-        image1: Image6,
+        image: Image6,
         title: "Turkey Burguer",
         paragraph: "Hambúrguer de peru suculento, cheddar, cebola caramelizada e alface.",
         rating: 4.0,
@@ -62,15 +63,15 @@ const mockData = [
     },
     {
         id: "0007",
-        image1: Image7,
-        title: "Somokey House",
+        image: Image7,
+        title: "Smokey House",
         paragraph: "Blend defumado, queijo provolone, cebola crispy e molho barbecue.",
         rating: 4.5,
         price: 39.90
     },
     {
         id: "0008",
-        image1: Image8,
+        image: Image8,
         title: "Classic Burguer",
         paragraph: "O clássico: carne, queijo, ketchup, mostarda, picles e cebola branca.",
         rating: 4.0,
@@ -80,11 +81,82 @@ const mockData = [
 
 ];
 
+function renderRatingIcons(rating) {
+
+    const stars = [];
+
+    for (let i = 0; i < 5; i++) {
+        if (rating > 0.5) {
+            stars.push(<i key={i} className="bi bi-star-fill"></i>)
+            rating--;
+        } else if (rating > 0 && rating < 1) {
+            stars.push(<i key={i} className="bi bi-star-half"></i>)
+            rating--;
+        } else {
+            stars.push(<i key={i} className="bi bi-star"></i>)
+            rating--;
+        }
+    }
+
+    return stars;
+};
+
+function Section3() {
+
+    return (
+        <section>
+            <Container>
+                {/*  */}
+                <Row>
+                    <Col lg={{ span: 8, offset: 2 }} className="text-center" mb-5>
+                        <h2>Nossos Burguers Insanos</h2>
+                        <p className="para">
+                            Explodimos o limite do sabor com combinações ousadas e ingredientes fora do comum.
+                            Prepare-se para uma experiência gastronômica intensa em cada mordida.
+                        </p>
+                    </Col>
+                </Row>
+                <Row >
+                    {mockData.map((cardData, index) => (
+
+                        <Cards
+                            key={index}
+                            image={cardData.image}
+                            rating={cardData.rating}
+                            title={cardData.title}
+                            paragraph={cardData.paragraph}
+                            price={cardData.price}
+                            renderRatingIcons={renderRatingIcons}
+                        >
 
 
-function Section2(){
-
+                        </Cards>
+                    ))}
+                </Row>
+                <Row className="pt-5">
+                    <Col sm={6} lg={5}>
+                        <div className="ads_box ads_img1 mb-5 mb-md-0">
+                            <h4 className="mb-0">Ganhe Grátis</h4>
+                            <h5>Batata c/ Queijo</h5>
+                            <Link to='/' className="btn btn_red px-4 rounded-0">
+                                Resgatar Agora
+                            </Link>
+                        </div>
+                    </Col>
+                    <Col sm={6} lg={5}>
+                        <div className="ads_box ads_img2">
+                            <h4 className="mb-0">Promoção</h4>
+                            <h5>Burguer em Dobro</h5>
+                            <Link to='/' className="btn btn_red px-4 rounded-0">
+                                Aproveitar Oferta
+                            </Link>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+    );
 
 }
 
-export default Section2;
+export default Section3;
