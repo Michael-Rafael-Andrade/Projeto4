@@ -5,6 +5,7 @@ import Section1 from "./Section1.js";
 import Section2 from "./Section2.js";
 import Section3 from "./Section3.js";
 import Section4 from "./Section4.js";
+import Section5 from "./Section5.js";
 
 function Home(){
 
@@ -24,7 +25,8 @@ function Home(){
             <Section4/>
 
             {/* Home Section Shop */}
-            
+            <Section5/>
+
             {/* Home Section Blog */}
             
             {/* Home Section Contact */}
