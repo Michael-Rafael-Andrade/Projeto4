@@ -1,9 +1,10 @@
+import "../../styles/HomeStyle.css";
 import React from "react";
 import Layout from "../../components/Layouts/Layout.js";
 import Section1 from "./Section1.js";
 import Section2 from "./Section2.js";
 import Section3 from "./Section3.js";
-import "../../styles/HomeStyle.css";
+import Section4 from "./Section4.js";
 
 function Home(){
 
@@ -20,7 +21,8 @@ function Home(){
             <Section3/>
 
             {/* Home Section Promotion */}
-            
+            <Section4/>
+
             {/* Home Section Shop */}
             
             {/* Home Section Blog */}

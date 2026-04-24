@@ -183,3 +183,36 @@
     Home Promotion 4.0 e Paralax 5.0
 */
 
+.promotion_section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--light-grey);
+}
+
+.promotion_section h2{
+    font-size: 3.25rem;
+    margin-bottom: 25px;
+}
+
+.promotion_section p{
+    font-size: 1.125rem;
+}
+
+.promotion_section ul{
+    padding-left: 15px;
+}
+
+.bg_parallax_scroll{
+    background: url("../assets/parallax/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+
+}
+
+/* 
+    Home Shop App 6.0
+*/
+
+
