@@ -215,4 +215,111 @@
     Home Shop App 6.0
 */
 
+.shop_section{
+    padding: 100px 0 0;
+    background: var(--yellow);
+}
+
+.shop_section h4{
+    font-size: 2.375rem;
+    font-weight: 400;
+    color: var(--bg-coffe);
+}
+
+.shop_section h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--bg-coffe);
+    letter-spacing: -1px;
+}
+
+.shop_section p{
+    font-size: 1.125rem;
+    color: var(--bg-coffe);
+    padding-right: 10%;
+    margin-bottom: 40px;
+}
+
+.shop_section .store{
+    max-width: 40%;
+}
+
+.shop_section .e_shop{
+    text-align: center;
+}
+
+.brand_section{
+    padding: 70px 0 40px;
+
+    background: var(--light-grey);
+    overflow: hidden;
+}
+
+.brand_section .brand_img{
+    width: 180px;
+    height: auto;
+}
+
+.carousel.slide .carousel-inner{
+    overflow: unset;
+}
+
+.carousel.slide .carousel-inner .caroulsel-caption{
+    position: relative;
+    right: unset;
+    left: unset;
+}
+
+/* 
+    Home Blog 7.0
+*/
+
+.blog_section{
+    padding: 80px 0 50px;
+    background: url("../assets/blog/reviews.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.blog_section .user_img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 25px;
+}
+
+.blog_section .carousel.slide .carousel-inner .carousel-caption p{
+    font-size: 1.7rem;
+    line-height: 1.45;
+    font-weight: 400;
+    padding: 0 12%;
+    margin-bottom: 25px;
+}
+
+.blog_section .carousel.slide .caroulsel-inner .caroulsel-caption .item_rating i{
+    color: var(--yellow);
+    margin-right: 5px;
+
+}
+
+.blog_section .carousel.slide .caroulsel-inner .caroulsel-caption h5{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/*
+    Home Contact 8.0
+*/
+
+
+/*
+    Home Footer 9.0
+*/
+
+
+/*
+    Home Scroll Top
+*/
 
