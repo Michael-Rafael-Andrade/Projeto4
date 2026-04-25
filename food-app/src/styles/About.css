@@ -1,0 +1,29 @@
+/* About */
+.about_section .titulo_Sobre {
+    color: var(--bg-coffee);
+}
+
+.about_section .paragrafo_Sobre {
+    color: var(--light-black);
+    font-size: 1.4rem;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.about_section .img_Sobre {
+    width: 80%;
+    margin-bottom: 400px;
+    border-radius: 25px;
+
+}
+
+.about_section .btn_sobre {
+    display: flex;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0;
+    text-decoration: none;
+}

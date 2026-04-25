@@ -104,6 +104,7 @@ a {
   font-family: var(--oswald-font);
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 /* Efeito de inversão de cores no hover do botão amarelo */
@@ -112,6 +113,7 @@ a {
   color: var(--white);
   background: transparent;
   border-color: var(--white);
+  /* text-decoration: none; */
 }
 
 /* Botão Vermelho */
@@ -119,6 +121,7 @@ a {
   color: var(--white);
   background: var(--light-red);
   border: 1px solid var(--light-red);
+  border-radius: 8px;
 }
 
 /* Efeito de transparência no hover do botão vermelho */

@@ -13,9 +13,9 @@ function Historia() {
             <section className="about_section">
                 <Container>
                     <Row>
-                        <Col lg={{ span: 8, offset: 2 }} className="text-center">
+                        <Col lg={{ span: 8, offset: 2 }} className="titulo_sobre">
                             <h2 className="titulo_Sobre">Sobre a Tasty Burger</h2>
-                            <p className="paragrafo_Sobre">
+                            <p className="texto_historia">
                                 A hamburgueria Tasty Burger nasceu em um pequeno ponto de esquina, desacreditada por muitos.
                                 No início, os recursos eram escassos e os clientes raros.
                                 Os fundadores enfrentaram dificuldades financeiras e críticas constantes.
@@ -32,7 +32,7 @@ function Historia() {
                                 De desacreditada, tornou-se símbolo de perseverança e sucesso.
                                 A história da Tasty Burger inspira empreendedores a nunca desistirem dos seus sonhos.
                             </p>
-                            <Link to="/" className="btn_Sobre order_now btn_red">
+                            <Link to="/" className="btn_sobre order_now btn_red">
                                 Menu principal
                             </Link>
                             <p>

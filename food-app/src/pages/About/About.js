@@ -17,7 +17,7 @@ function About() {
 
     return (
         <Layout>
-            Home Section Banner
+            {/* Home Section Banner */}
             <Section1 />
 
 

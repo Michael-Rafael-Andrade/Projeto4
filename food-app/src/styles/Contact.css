@@ -1,0 +1,58 @@
+.titulo_Contato {
+    text-align: center;
+    color: var(--bg-coffee);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.titulo_sobre {
+    text-align: center;
+}
+
+.texto_historia {
+    text-align: justify !important;
+    color: var(--grey);
+    font-size: 1.2rem;
+    line-height: 2;
+    margin: 20px auto;
+    max-width: 100%; /* Deixar a coluna do bootstrap controlar a largura */
+    display: block;
+}
+
+.form_Formulario {
+    color: var(--brown);
+    display: block;
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+
+}
+
+.form {
+    color: var(--brown);
+}
+
+.form .btn_form {
+    justify-content: center;
+    background-color: var(--light-grey-2);
+    color: var(--bg-coffee);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about_section .btn_contato {
+    display: flex;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.form .btn_form:hover {
+    background-color: var(--light-red);
+    color: var(--white);
+}
