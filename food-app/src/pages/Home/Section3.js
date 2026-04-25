@@ -82,7 +82,7 @@ const mockData = [
 
 ];
 
-function renderRatingIcons(rating) {
+const renderRatingIcons = (rating) => {
 
     const stars = [];
 
@@ -144,7 +144,7 @@ function Section3() {
                             </Link>
                         </div>
                     </Col>
-                    <Col sm={6} lg={5}>
+                    <Col sm={6} lg={7}>
                         <div className="ads_box ads_img2">
                             <h4 className="mb-0">Promoção</h4>
                             <h5>Burguer em Dobro</h5>
