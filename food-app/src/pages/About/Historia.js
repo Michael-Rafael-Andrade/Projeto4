@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import hist from "../../assets/parallax/bg.jpg";
+import Header from "../../components/Layouts/Header.js";
 
 
 

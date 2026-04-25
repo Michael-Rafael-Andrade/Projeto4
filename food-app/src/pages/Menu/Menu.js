@@ -1,10 +1,27 @@
+import React from "react";
+import Layout from "../../components/Layouts/Layout.js";
+import Section1 from "../Home/Section1.js";
+import Section7 from "../Home/Section7.js";
+import Section3 from "../Home/Section3.js";
 
 function Menu(){
 
     return(
-        <div>
+
+        <Layout>
+
+            {/* Chamando a Section1 para realizar a estrutura básica do layout */}
+            <Section1/>
+
             
-        </div>
+            {/*  Chamando a Section3 para realizar os cards dos produtos */}
+            <Section3/>
+
+            {/* Chamando a Section7 para realizar a estrutura básica do layout */}
+            <Section7/>
+
+
+        </Layout>
     );
 }
 
