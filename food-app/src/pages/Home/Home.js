@@ -7,6 +7,7 @@ import Section3 from "./Section3.js";
 import Section4 from "./Section4.js";
 import Section5 from "./Section5.js";
 import Section6 from "./Section6.js";
+import Section7 from "./Section7.js";
 
 function Home(){
 
@@ -32,7 +33,7 @@ function Home(){
             <Section6/>
 
             {/* Home Section Contact */}
-
+            <Section7/>
 
         </Layout>
     );
