@@ -29,7 +29,7 @@ function Section1() {
                                 Experimente o novo Double Burguer:
                                 2x bifes, 2x mais cebola, 2x queijos cheddar, 2x salada, maionese caseira e um pão extremamente macio.
                             </p>
-                            <Link to='/' className="btn order_now">
+                            <Link to='/' className="order_now">
                                 Comprar
                             </Link>
 

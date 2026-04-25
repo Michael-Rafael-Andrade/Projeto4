@@ -460,3 +460,30 @@ footer .copy_right ul li:last-child:after {
     font-size: 1rem;
   }
 }
+
+/* About */
+.about_section .titulo_Sobre{
+    color: var(--bg-coffee);
+}
+
+.about_section .paragrafo_Sobre{
+    color: var(--light-black);
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.about_section .img_Sobre{
+    width: 80%;
+    margin-bottom: 400px;
+}
+
+.about_section .btn_Sobre {
+    display: flex;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0;
+}
+
