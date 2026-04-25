@@ -51,7 +51,7 @@ function Footer() {
                                 <p>Whatsapp</p>
                                 <p>
                                     <Link to="tel:1199999-8888" className="calling">
-                                        11 999999-8888
+                                        11 99999-8888
                                     </Link>
                                 </p>
 
