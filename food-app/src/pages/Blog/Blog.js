@@ -1,7 +1,8 @@
 import Layout from "../../components/Layouts/Layout";
 import Section1 from "../Home/Section1";
-import Section7 from "../Home/Section7";
+import Section1Blog from "./Section1Blog.js";
 import Voltar from "../Menu/Voltar";
+import Section7 from "../Home/Section7";
 
 
 function Blog() {
@@ -13,7 +14,9 @@ function Blog() {
             <Section1 />
 
 
-            {/*  Chamando a Section3 para realizar os cards dos produtos */}
+            {/*  Chamando a Section1Blog para realizar os cards dos produtos */}
+            <Section1Blog />
+
 
             <Voltar />
 
