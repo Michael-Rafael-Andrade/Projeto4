@@ -487,3 +487,10 @@ footer .copy_right ul li:last-child:after {
     margin-top: 0;
 }
 
+.btn_Voltar {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
