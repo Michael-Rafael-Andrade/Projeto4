@@ -12,7 +12,7 @@ import Contact from "./pages/Contact/Contact.js";
 function App() {
   return (
     
-    <BrowserRouter> 
+    <BrowserRouter basename="/Projeto4"> 
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />

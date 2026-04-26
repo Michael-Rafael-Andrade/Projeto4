@@ -16,7 +16,8 @@
     font-size: 1.2rem;
     line-height: 2;
     margin: 20px auto;
-    max-width: 100%; /* Deixar a coluna do bootstrap controlar a largura */
+    max-width: 100%;
+    /* Deixar a coluna do bootstrap controlar a largura */
     display: block;
 }
 
@@ -39,6 +40,10 @@
     color: var(--bg-coffee);
     text-decoration: none;
     border-radius: 5px;
+    width: 100px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .about_section .btn_contato {
